@@ -15,7 +15,7 @@ class PostBar extends Component {
  render() {
  	if (this.props.match.params.id) { // make sure there is an id before displaying the option to post
    return (
-   	<div className="postContainer">
+   	<div className="topContainer">
    		<div id="left">
    			<span className="rl">RL</span>
    			<p>las vegas</p>

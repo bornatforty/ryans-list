@@ -22,7 +22,7 @@ class AllListings extends Component {
          <SortBar />
    		{this.props.alllistings.map(data => (
    			<div key={data.id} className="listing">
-   			<Link to={`/post/${data.id}`}>{data.name}</Link>
+   			   <i className="fa fa-star"></i><Link to={`/post/${data.id}`}>{data.name}</Link><i className="fa fa-trash"></i>
    			</div>
    			))}
    	</div>
