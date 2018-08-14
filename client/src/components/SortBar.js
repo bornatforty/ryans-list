@@ -11,15 +11,15 @@ class SortBar extends Component {
    			<option value="gallery">Gallery</option>
    			<option value="map">Map</option>
    		</select>
-   		<div className="pages">
+   	  <div className="pages">
    			<form>
-   				<i className="fa fa-chevron-left"></i>
-   				<i className="fa fa-arrow-left"><p>prev</p></i>
-   				<p></p>
-   				<p>next</p><i className="fa fa-arrow-right"></i>
+   				<p className="pageNav">
+                  <i className="fa fa-chevron-left">prev</i>
+   				   <i className="fa fa-chevron-right">next</i>
+               </p>
    			</form>
-   			</div>
-   			<button value="newest" />
+   		</div>
+   			<button value="submit">Newest</button>
    	</div>
      
    )

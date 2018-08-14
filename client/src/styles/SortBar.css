@@ -2,11 +2,15 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: 2px solid green;
 }
 .pages {
 	width: 250px;
 	padding: 0;
 	justify-content: center;
-	border: 2px solid blue;
+}
+.pageNav {
+	text-align: center;
+}
+.pageNav i {
+	font-size: 1.2em;
 }
