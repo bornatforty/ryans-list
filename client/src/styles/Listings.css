@@ -1,0 +1,27 @@
+.listContainer {
+	width: 800px;
+}
+.listing {
+	padding: 10px;
+}
+.listing a:hover {
+	text-decoration-line: underline;
+}
+.fa-star {
+	color: #ccc;
+	text-shadow: 0px 0px 1px #888;
+}
+.fa-star:hover {
+	text-shadow: 2px 2px 1px #ad9301;
+	cursor: pointer;
+}
+.fa-trash:hover {
+	color: red;
+	cursor: pointer;
+}
+.inactive {
+	display: none;
+}
+.active {
+	display: inline;
+}

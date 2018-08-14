@@ -1,0 +1,20 @@
+.postContainer {
+	background: #ccc;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	margin: 0 20px 20px 20px;
+	width: 100%;
+}
+.rl {
+	border-radius: 50%;
+	background: white;
+	padding: 5px;
+}
+#left {
+	display: inline;
+}
+#right input {
+	padding: 5px;
+	margin-left: 5px;
+}

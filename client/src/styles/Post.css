@@ -1,0 +1,22 @@
+.postContainer {
+	width: 800px;
+	background: transparent;
+	margin: 0 auto;
+}
+.post {
+	display: flex;
+	flex-direction: column;
+}
+.postName {
+	color: black;
+	background: transparent;
+	font-size: 1.5em;
+}
+.postDesc {
+	font-size: 1em;
+	color: black;
+}
+.postDesc:hover {
+	background: transparent;
+	color: black;
+}
