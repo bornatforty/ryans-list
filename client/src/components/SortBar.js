@@ -13,10 +13,10 @@ class SortBar extends Component {
    		</select>
    	  <div className="pages">
    			<form>
-   				<p className="pageNav">
+   				<span className="pageNav">
                   <i className="fa fa-chevron-left">prev</i>
    				   <i className="fa fa-chevron-right">next</i>
-               </p>
+               </span>
    			</form>
    		</div>
    			<button value="submit">Newest</button>
