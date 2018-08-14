@@ -19,9 +19,9 @@ class MainPage extends Component {
    return (
    	<div className="grandeContainer">
    		<PostBar />
-   		<div className="cityBar">
-   		Las Vegas
-   		</div>
+   			<div className="cityBar">
+   				Ryan's List
+   			</div>
    		<div className="container">
    			<SearchSide />
    			{this.props.categories.map(data => (

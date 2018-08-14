@@ -17,7 +17,7 @@ class PostBar extends Component {
    return (
    	<div className="topContainer">
    		<div id="left">
-   			<span className="rl">RL</span>
+   			<span className="rl"><Link to="/">RL</Link></span>
    			<p>las vegas</p>
    		</div>
    		
@@ -28,7 +28,14 @@ class PostBar extends Component {
    	</div>
    )
 } else {
-	return <div></div> //do not display on front page because no child_id to associate with
+	return (
+      <div className="topContainer">
+         <div id="left">
+            <span className="rl"><Link to="/">RL</Link></span>
+            <p>las vegas</p>
+         </div> 
+      </div>
+      )//do not display post option on front page because no child_id to associate with
  }
 }
 }
