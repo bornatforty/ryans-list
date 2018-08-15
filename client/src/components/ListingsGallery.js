@@ -8,7 +8,7 @@ import 'font-awesome/css/font-awesome.min.css'
 import '../styles/Listings.css'
 
 
-class Listings extends Component {
+class ListingsGallery extends Component {
 
 	componentDidMount() {
 		listings(this.props.match.params.id)
@@ -20,14 +20,15 @@ class Listings extends Component {
    	<div className="listContainer">
    	<PostBar />
    	<SearchTop />
-            <button value="list"><Link to={`/listings/${this.props.match.params.id}`}><i className="fa fa-bars">List</i></Link></button>
+   	<button value="list"><Link to={`/listings/${this.props.match.params.id}`}><i className="fa fa-bars">List</i></Link></button>
             <button value="thumb"><Link to={`/thumbs/${this.props.match.params.id}`}><i className="fa fa-list">Thumb</i></Link></button>
             <button value="gallery"><Link to={`/gallery/${this.props.match.params.id}`}><i className="fa fa-image">Gallery</i></Link></button>
    		{this.props.listings.map(data => (
    			<div id="views">
-   				<div key={data.id} className="listing">
-   					<i className="fa fa-star"></i><Link to={`/post/${data.id}`}>{data.name}</Link><i className="fa fa-trash"></i>
-   				</div>
+               <div key={data.id} className="gallery">
+                  <img src={data.image} />
+                  <i className="fa fa-star"></i><Link to={`/post/${data.id}`}>{data.name}</Link><i className="fa fa-trash"></i>
+               </div>
    			</div>
    			))}
    	</div>
@@ -42,4 +43,4 @@ function mapStateToProps(appState) {
 	}
 }
 
-export default connect(mapStateToProps)(Listings)
+export default connect(mapStateToProps)(ListingsGallery)

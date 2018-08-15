@@ -17,12 +17,12 @@ class MainPage extends Component {
 
  render() {
    return (
-   	<div className="grandeContainer">
+   	<div key={"lists" + 1} className="grandeContainer">
    		<PostBar />
    			<div className="cityBar">
    				Ryan's List
    			</div>
-   		<div className="container">
+   		<div key={"listingslink" + 2} className="container">
    			<SearchSide />
    			{this.props.categories.map(data => (
 				<div key={data.id} className="header">

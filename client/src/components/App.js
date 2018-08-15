@@ -6,6 +6,10 @@ import MainPage from './MainPage'
 import store from '../styles/store'
 import Listings from './Listings'
 import AllListings from './AllListings'
+import AllThumbs from './AllThumbs'
+import AllGallery from './AllGallery'
+import ListingsGallery from './ListingsGallery'
+import ListingsThumbs from './ListingsThumbs'
 import AddListing from './AddListing'
 import Post from './Post'
 
@@ -17,9 +21,13 @@ class App extends Component {
     		<Router>
     			<Switch>
     				<Route exact path={'/'} component={MainPage} />
-    				<Route path={'/listings/:id'} component={Listings} />
+    				<Route exact path={'/listings/:id'} component={Listings} />
+                    <Route path={'/gallery/:id'} component={ListingsGallery} />
+                    <Route path={'/thumbs/:id'} component={ListingsThumbs} />
     				<Route path={'/alllistings/:id'} component={AllListings} />
-    				<Route exact path={'/d/:id/add'} component={AddListing} />
+                    <Route path={'/allthumbs/:id'} component={AllThumbs} />
+                    <Route path={'/allgallery/:id'} component={AllGallery} />
+    				<Route path={'/d/:id/add'} component={AddListing} />
     				<Route path={'/post/:id'} component={Post} />
     			</Switch>
     		</Router>
